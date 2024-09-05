@@ -1,0 +1,93 @@
+/* App.css */
+
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.input-container {
+  margin: 20px;
+}
+
+.status-message {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.message {
+  margin: 10px 0;
+  color: green;
+  font-weight: bold;
+}
+
+.pots-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.pot {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+  width: 20%;
+}
+
+.pot h3 {
+  margin-bottom: 10px;
+}
+
+.pot ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.pot ul li {
+  background-color: #fff;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+/* Design for drawn matches */
+.drawn-matches-container {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;  /* Align matches vertically */
+  align-items: center;
+}
+
+.drawn-match {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  width: 60%;  /* Adjust width as needed */
+  margin: 10px 0; /* Space between matches */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.drawn-match strong {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.drawn-match span {
+  display: block;
+  margin-top: 8px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Highlight for TBD values */
+.drawn-match span:contains('TBD') {
+  color: red;
+  font-weight: bold;
+}
